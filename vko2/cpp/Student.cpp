@@ -2,19 +2,21 @@
 #include <iostream>
 
     Student::Student(){
+        std::cout << "Student constructor\n";
         setName("NONAME");
         setStudentnumber("NONUMBER");
         setCredits(0);
     }
 
     Student::Student(const std::string& aName, const std::string& aStudentnumber){
+        std::cout << "Student constructor with arguments\n";
         setName(aName);
         setStudentnumber(aStudentnumber);
         setCredits(0);
     }
 
     Student::~Student(){
-
+        std::cout << "Student destructor\n";
     }
 
     void Student::setName(const std::string& aName){

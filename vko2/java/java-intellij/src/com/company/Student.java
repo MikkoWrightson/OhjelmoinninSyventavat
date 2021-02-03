@@ -6,9 +6,10 @@ public class Student {
     private int credits;
 
     public Student(){
-
+        System.out.printf("Student constructor%n");
     }
     public Student(String aName, String aStudentNO){
+        System.out.printf("Student constructor with arguments%n");
         this.setName(aName);
         this.setStudentNO(aStudentNO);
         this.setCredits(0);
@@ -32,7 +33,9 @@ public class Student {
     public void setCredits(int aCredits){
         this.credits = aCredits;
     }
-    public int getCredits(){
-        return this.credits;
+    public int getCredits(){ return this.credits; }
+
+    public void printInfo(){
+        System.out.printf("Name: %s%nStudent number: %s%nCredits: %d%n", name, studentNumber, credits );
     }
 }

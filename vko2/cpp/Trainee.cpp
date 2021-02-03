@@ -2,6 +2,7 @@
 #include <iostream>
 
     Trainee::Trainee(){
+        std::cout << "Trainee constructor\n";
         setName("NONAME");
         setStudentnumber("NONUMBER");
         setCredits(0);
@@ -10,6 +11,7 @@
     }
 
     Trainee::Trainee(const std::string& aName, const std::string& aStudentnumber, const int& aCredits, const std::string& aJob, const float& aWage){
+        std::cout << "Trainee constructor with arguments\n";
         setName(aName);
         setStudentnumber(aStudentnumber);
         setCredits(aCredits);
@@ -18,7 +20,7 @@
     }
 
     Trainee::~Trainee(){
-
+        std::cout << "Trainee destructor\n";
     }
 
     void Trainee::setJob(const std::string& aJob){
