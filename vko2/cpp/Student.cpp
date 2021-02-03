@@ -43,6 +43,6 @@
         return credits;
     }
 
-    void Student::printInfo() const{
+    void Student::printInfo(){
         std::cout << "Name: " << getName() << "\nStudent number: " << getStudentnumber() << "\nCredits: " << getCredits() << std::endl;
     }

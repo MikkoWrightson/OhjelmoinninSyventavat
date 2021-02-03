@@ -1,4 +1,5 @@
 #include "Trainee.h"
+#include "Student.h"
 #include <iostream>
 
     Trainee::Trainee(){
@@ -39,7 +40,7 @@
         return wage;
     }
 
-    void Trainee::printInfo() const{
+    void Trainee::printInfo(){
         Student::printInfo();
         std::cout << "Job: " << job << "\nWage: " << wage << std::endl;
     }

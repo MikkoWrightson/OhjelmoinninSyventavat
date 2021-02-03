@@ -17,7 +17,7 @@ public:
     void setCredits(const int& aCredits);
     int getCredits() const;
 
-    void printInfo() const;
+    virtual void printInfo();
 
 private:
 

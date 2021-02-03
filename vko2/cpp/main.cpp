@@ -9,18 +9,21 @@ int main(){
     Trainee felix;
     Student jack("jack", "010101");
 
-    john->printInfo();
+    // john->printInfo();
 
-    mary->printInfo();
-    mary->setName("Mary");
-    mary->setStudentnumber("0123");
-    mary->setCredits(2);
-    mary->printInfo();
+    mary->Trainee::printInfo();
+    std::cout << std::endl;
+    mary->Student::printInfo();
+    std::cout << std::endl;
+    // mary->setName("Mary");
+    // mary->setStudentnumber("0123");
+    // mary->setCredits(2);
+    // mary->printInfo();
 
 
-    jack.printInfo();
-    felix.setName("felix");
-    felix.printInfo();
+    // jack.printInfo();
+    // felix.setName("felix");
+    // felix.printInfo();
 
 
 

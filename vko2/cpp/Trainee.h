@@ -18,7 +18,7 @@ public:
     void setWage(const float& aWage);
     int getWage() const;
 
-    void printInfo() const;
+    virtual void printInfo();
 
 private:
     std::string job;
