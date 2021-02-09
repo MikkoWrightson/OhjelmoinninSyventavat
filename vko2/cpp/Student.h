@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
 
-
 class Student{
 public:
     Student();
@@ -21,8 +20,8 @@ public:
 
 private:
 
-    std::string name;
-    std::string studentnumber;
-    int credits;
+    std::string m_name;
+    std::string m_studentnumber;
+    int m_credits;
 
 };

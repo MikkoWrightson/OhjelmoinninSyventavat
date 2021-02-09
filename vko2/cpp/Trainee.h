@@ -21,6 +21,6 @@ public:
     virtual void printInfo();
 
 private:
-    std::string job;
-    float wage;
+    std::string m_job;
+    float m_wage;
 };

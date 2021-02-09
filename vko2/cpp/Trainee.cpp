@@ -11,13 +11,9 @@
         setWage(0);
     }
 
-    Trainee::Trainee(const std::string& aName, const std::string& aStudentnumber, const int& aCredits, const std::string& aJob, const float& aWage){
+    Trainee::Trainee(const std::string& aName, const std::string& aStudentnumber, const int& aCredits, const std::string& aJob, const float& aWage) : m_job(aJob), m_wage(aWage) {
         std::cout << "Trainee constructor with arguments\n";
-        setName(aName);
-        setStudentnumber(aStudentnumber);
-        setCredits(aCredits);
-        setJob(aJob);
-        setWage(aWage);
+        //Student::Student(aName, aStudentnumber, aCredits);
     }
 
     Trainee::~Trainee(){
@@ -25,22 +21,22 @@
     }
 
     void Trainee::setJob(const std::string& aJob){
-        job = aJob;
+        m_job = aJob;
     }
 
     std::string Trainee::getJob() const{
-        return job;
+        return m_job;
     }
 
     void Trainee::setWage(const float& aWage){
-        wage = aWage;
+        m_wage = aWage;
     }
 
     int Trainee::getWage() const{
-        return wage;
+        return m_wage;
     }
 
     void Trainee::printInfo(){
         Student::printInfo();
-        std::cout << "Job: " << job << "\nWage: " << wage << std::endl;
+        std::cout << "Job: " << m_job << "\nWage: " << m_wage << std::endl;
     }

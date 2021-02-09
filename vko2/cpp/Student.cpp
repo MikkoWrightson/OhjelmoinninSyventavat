@@ -3,46 +3,43 @@
 
     Student::Student(){
         std::cout << "Student constructor\n";
-        setName("NONAME");
-        setStudentnumber("NONUMBER");
-        setCredits(0);
+        m_name = "NOm_name";
+        m_studentnumber = "NONUMBER";
+        m_credits = 0;
     }
 
-    Student::Student(const std::string& aName, const std::string& aStudentnumber){
+    Student::Student(const std::string& aName, const std::string& aStudentnumber) : m_name(aName), m_studentnumber(aStudentnumber){
         std::cout << "Student constructor with arguments\n";
-        setName(aName);
-        setStudentnumber(aStudentnumber);
-        setCredits(0);
     }
 
     Student::~Student(){
         std::cout << "Student destructor\n";
     }
 
-    void Student::setName(const std::string& aName){
-        name = aName;
+    void Student::setName(const std::string& aName) {
+        m_name = aName;
     }
 
     std::string Student::getName() const{
-        return name;
+        return m_name;
     }
 
     void Student::setStudentnumber(const std::string& aStudentnumber){
-        studentnumber = aStudentnumber;
+        m_studentnumber = aStudentnumber;
     }
 
     std::string Student::getStudentnumber() const{
-        return studentnumber;
+        return m_studentnumber;
     }
 
     void Student::setCredits(const int& aCredits){
-        credits = aCredits;
+        m_credits = aCredits;
     }
 
     int Student::getCredits() const{
-        return credits;
+        return m_credits;
     }
 
     void Student::printInfo(){
-        std::cout << "Name: " << getName() << "\nStudent number: " << getStudentnumber() << "\nCredits: " << getCredits() << std::endl;
+        std::cout << "m_name: " << m_name << "\nStudent number: " << m_studentnumber << "\nm_credits: " << m_credits << std::endl;
     }
